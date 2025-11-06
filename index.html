@@ -1,92 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu đa cấp với class và id</title>
+    <title>Sweet Delight - Bakery & Coffee</title>
     <link rel="stylesheet" href="body.css">
 </head>
-<body>
-    <div id="header">
-        <h1>Học Class và ID</h1>
-        <p>Học Menu đa cấp</p>
-    </div>
-
-    <!-- Menu -->
-    <nav id="main-menu">
-        <ul>
-            <li class="menu-item">
-                <a href="#">Trang chủ</a>
-            </li>
-            <li class="menu-item">
-                <a href="#">Sản Phẩm</a>
-                <ul class="sub-menu">
-                    <li class="sub-menu-item"><a href="">Điện Thoại</a></li>
-                    <li class="sub-menu-item"><a href="">Máy Tính Bảng</a></li>
-                    <li class="sub-menu-item">
-                        <a href="">Laptop</a>
-                        <ul class="sub-sub-menu">
-                            <li class="sub-sub-menu-item"><a href="">Dell</a></li>
-                            <li class="sub-sub-menu-item"><a href="">Lenovo</a></li>
-                            <li class="sub-sub-menu-item"><a href="">MacBook</a></li>
-                            <li class="sub-sub-menu-item"><a href="">Asus</a></li>
-                        </ul>
-                    <li class="sub-menu-item"><a href="">Phụ Kiện</a></li>
-                </ul>
-            </li>
-            <li class="menu-item">
-                <a href="">Tin Tức</a>
-                <ul class="sub-menu">
-                    <li class="sub-menu-item"><a href="">Web Chất Lượng</a></li>
-                    <li class="sub-menu-item"><a href="">Giao Diện Web</a></li>
-                    <li class="sub-menu-item">
-                        <a href="">Người tham gia</a>
-                        <ul class="sub-sub-menu">
-                            <li class="sub-sub-menu-item"><a href="">SEO</a></li>
-                            <li class="sub-sub-menu-item"><a href="">Social Media</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="menu-item">
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!--Nội Dung-->
-    <div id="content-wrapper">
-        <div id="content" class="box">
-            <div id="main">
-                <h2 class="title">Nội dung trang web</h2>
-                <img src="Downloads\mic.jpeg" sizes="" alt="">
-                <p>Đây là phần nội dung chính của trang web
-                    Nó sử dụng <b>class="content"</b> để định vị bố cục
-                    <b>class="box"</b> để định dang khung trắng
-                </p>
-                <p>
-                    Thanh menu phía trên <b>menu đa cấp</b> khi trỏ chuột vào sẽ tự động
-                    hiện menu con ra            
-                </p>
-                <a href="" class="btn">Xem Thêm</a>
-                <img src="images.jpg" width="150px" height="150px" alt="">
+<body>b
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-content">
+                <span>🎁 Giảm 30% cho đơn đầu tiên</span>
+                <span>🚚 Miễn phí vận chuyển nội thành</span>
+                <span>📞 Hotline: 0901 234 567</span>
             </div>
         </div>
-        <div id="sidebar" class="box">
-            <h3 class="title">Sidebar</h3>
-            <img src="sidebar.png" width="50px" height="50px" alt="">
-            <p>
-                Đây là phần sidebar, cũng sử dụng <b>class="box"</b>
-                để có cùng phong cách với nội dung chính
-            </p>
-            <a href="" class="btn">Liên hệ</a>
-            <img src="BoJack.jpg" width="100px" height="100px" alt="">
-        </div>
     </div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <a href="#" class="logo">
+                    <span class="logo-icon">🎂</span>
+                    <span class="logo-text">
+                        <strong>Sweet Delight</strong>
+                        <small>Bakery & Coffee</small>
+                    </span>
+                </a>
 
-    <!--Footer-->
-    <div id="footer">
-        <p>&copy; 2025 PNH</p>
-    </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm bánh ngọt, bánh sinh nhật...">
+                    <button class="search-btn">🔍</button>
+                </div>
+
+                <div class="header-actions">
+                    <a href="#" class="action-item">
+                        <span class="action-icon">👤</span>
+                        <span class="action-text">Tài khoản</span>
+                    </a>
+                    <a href="#" class="action-item">
+                        <span class="action-icon">❤️</span>
+                        <span class="action-text">Yêu thích</span>
+                    </a>
+                    <a href="#" class="action-item cart">
+                        <span class="action-icon">🛒</span>
+                        <span class="action-text">Giỏ hàng</span>
+                        <span class="cart-count">3</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <a href="#" class="nav-link active">🏠 Trang chủ</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link">
+                        🎂 Bánh Sinh Nhật 
+                        <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#">Bánh trẻ em</a>
+                        <a href="#">Bánh người lớn</a>
+                        <a href="#">Bánh cưới</a>
+                        <a href="#">Bánh theo chủ đề</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-link">🧁 Cupcakes</a>
+                <a href="#" class="nav-link">🍰 Bánh Kem</a>
+                <a href="#" class="nav-link">🥐 Bánh Mặn</a>
+                <a href="#" class="nav-link">🍪 Bánh Quy</a>
+                <a href="#" class="nav-link highlight">🔥 Khuyến Mãi</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop" alt="Bánh Chocolate">
+                <div class="slide-content">
+                    <span class="slide-badge">Bán Chạy Nhất</span>
+                    <h1>Bánh Chocolate<br>Hảo Hạng</h1>
+                    <p>Chocolate Belgium cao cấp với hạnh nhân rang vàng</p>
+                    <div class="slide-price">
+                        <span class="current-price">250.000đ</span>
+                        <span class="old-price">320.000đ</span>
+                    </div>
+                    <div class="slide-actions">
+                        <button class="btn btn-primary">Mua ngay</button>
+                        <button class="btn btn-secondary">Xem chi tiết</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Danh Mục Nổi Bật</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1558301214-0c2d0a15f27c?q=80&w=400&auto=format&fit=crop" alt="Bánh sinh nhật">
+                    </div>
+                    <div class="category-content">
+                        <h3>Bánh Sinh Nhật</h3>
+                        <p>Thiết kế theo yêu cầu</p>
+                        <span class="category-count">50+ mẫu mã</span>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=400&auto=format&fit=crop" alt="Cupcakes">
+                    </div>
+                    <div class="category-content">
+                        <h3>Cupcakes</h3>
+                        <p>Đa dạng hương vị</p>
+                        <span class="category-count">30+ hương vị</span>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=400&auto=format&fit=crop" alt="Bánh kem">
+                    </div>
+                    <div class="category-content">
+                        <h3>Bánh Kem</h3>
+                        <p>Mềm mịn, béo ngậy</p>
+                        <span class="category-count">25+ công thức</span>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab794f27d2e5?q=80&w=400&auto=format&fit=crop" alt="Bánh mặn">
+                    </div>
+                    <div class="category-content">
+                        <h3>Bánh Mặn</h3>
+                        <p>Croissant, bánh mì tươi</p>
+                        <span class="category-count">20+ loại bánh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+                <a href="#" class="view-all">Xem tất cả →</a>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge hot">Bán chạy</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=400&auto=format&fit=crop" alt="Bánh Chocolate">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Bánh Chocolate Supreme</h3>
+                        <p class="product-desc">Chocolate Belgium, hạnh nhân rang</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ (128)
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">250.000đ</span>
+                            <span class="old-price">320.000đ</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-cart">Thêm vào giỏ</button>
+                            <button class="btn-buy">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge new">Mới</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=400&auto=format&fit=crop" alt="Cupcake Vani">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Cupcake Vani Hạnh Nhân</h3>
+                        <p class="product-desc">Vani Madagascar, hạnh nhân cắt lát</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ (89)
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">45.000đ</span>
+                            <span class="old-price">60.000đ</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-cart">Thêm vào giỏ</button>
+                            <button class="btn-buy">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge sale">Giảm 25%</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?q=80&w=400&auto=format&fit=crop" alt="Bánh Dâu Tây">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Bánh Dâu Tây Tươi</h3>
+                        <p class="product-desc">Dâu tây Đà Lạt, kem tươi không đường</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐☆ (156)
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">180.000đ</span>
+                            <span class="old-price">240.000đ</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-cart">Thêm vào giỏ</button>
+                            <button class="btn-buy">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge best">Yêu thích</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=400&auto=format&fit=crop" alt="Bánh Matcha">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Bánh Matcha Nhật Bản</h3>
+                        <p class="product-desc">Matcha Uji, đậu đỏ, ít ngọt</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ (203)
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">95.000đ</span>
+                            <span class="old-price">120.000đ</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-cart">Thêm vào giỏ</button>
+                            <button class="btn-buy">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promotion-banner">
+        <div class="container">
+            <div class="promo-content">
+                <div class="promo-text">
+                    <span class="promo-badge">Combo Đặc Biệt</span>
+                    <h2>Tiết Kiệm Đến 40%</h2>
+                    <p>Combo Gia Đình: 1 bánh lớn + 6 cupcakes + 1 hộp bánh quy</p>
+                    <div class="promo-price">
+                        <span class="old-price">550.000đ</span>
+                        <span class="new-price">329.000đ</span>
+                    </div>
+                    <button class="btn-promo">Đặt ngay</button>
+                </div>
+                <div class="promo-image">
+                    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=600&auto=format&fit=crop" alt="Combo bánh">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sweet Delight Bakery</h3>
+                    <p>Mang đến những chiếc bánh ngọt ngào nhất cho mọi dịp đặc biệt.</p>
+                    <div class="contact-info">
+                        <p>📍 123 Đường Ngọt Ngào, Q.1, TP.HCM</p>
+                        <p>📞 0901 234 567</p>
+                        <p>✉️ order@sweetdelight.com</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Danh mục</h4>
+                    <a href="#">Bánh Sinh Nhật</a>
+                    <a href="#">Cupcakes</a>
+                    <a href="#">Bánh Kem</a>
+                    <a href="#">Bánh Mặn</a>
+                    <a href="#">Bánh Quy</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Thông tin</h4>
+                    <a href="#">Về chúng tôi</a>
+                    <a href="#">Chính sách giao hàng</a>
+                    <a href="#">Chính sách đổi trả</a>
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Đăng ký nhận tin</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit">Đăng ký</button>
+                    </form>
+                    <p>Nhận thông tin khuyến mãi mới nhất</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sweet Delight Bakery. Bài tập lớn môn Phát triển Web.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
