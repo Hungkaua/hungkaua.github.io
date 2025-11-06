@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Thêm meta tags quan trọng -->
+<meta name="description" content="Ruka Cake - Thiên đường bánh ngọt với những chiếc bánh tươi ngon, chất lượng cao. Chuyên bánh sinh nhật, bánh cưới, cupcakes và các loại bánh ngọt.">
+<meta name="keywords" content="bánh ngọt, bánh sinh nhật, cupcakes, Ruka Cake, làm bánh, công thức bánh">
+<meta name="author" content="Ruka Cake">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Ruka Cake - Thiên đường bánh ngọt">
+<meta property="og:description" content="Khám phá thế giới bánh ngọt đầy màu sắc tại Ruka Cake">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Ruka Cake</title>
+    <link rel="stylesheet" href="Testcss.css">
+</head>
+<body>
+    <!-- Thêm ngay sau body -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<style>
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 10000;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+</style>
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <ul class="topbar-list">
+                <li>🚚 Miễn phí ship đơn từ 199k</li>
+                <li>🎁 Tặng kèm hộp quà xinh</li>
+                <li>⭐ Đảm bảo chất lượng</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-icon">🎂</span>
+                    <span>Ruka Cake</span>
+                </a>
+            </div>
+            
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm bánh ngọt...">
+                <button class="search-btn">🔍</button>
+            </div>
+            
+            <div class="actions">
+                <button class="btn">👤 Tài khoản</button>
+                <a href="cart.html" class="btn btn-primary">🛒 Giỏ hàng <span class="cart-count">2</span></a>
+            </div>
+        </div>
+    </header>
+
+<!-- Navigation -->
+<nav class="nav">
+    <div class="container">
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">🏠 Trang Chủ</a></li>
+            <li class="dropdown">
+                <a href="products.html" class="nav-link">🍰 Sản Phẩm ⌄</a>
+                <ul class="dropdown-menu">
+                    <li><a href="products.html">Tất cả sản phẩm</a></li>
+                    <li><a href="birthday.html">Bánh sinh nhật</a></li>
+                    <li><a href="wedding-cakes.html">Bánh cưới</a></li>
+                    <li><a href="cupcakes.html">Cupcakes</a></li>
+                    <li><a href="pastries.html">Bánh ngọt</a></li>
+                    <li><a href="cookies.html">Bánh quy</a></li>
+                </ul>
+            </li>
+            <li><a href="birthday.html" class="nav-link">🎂 Bánh Sinh Nhật</a></li>
+            <li><a href="gallery.html" class="nav-link">🖼️ Gallery</a></li>
+            <li class="dropdown">
+                <a href="recipes.html" class="nav-link">📖 Học Làm Bánh ⌄</a>
+                <ul class="dropdown-menu">
+                    <li><a href="recipes.html">Công thức</a></li>
+                    <li><a href="baking-tips.html">Mẹo làm bánh</a></li>
+                    <li><a href="video-recipes.html">Video hướng dẫn</a></li>
+                </ul>
+            </li>
+            <li><a href="blog.html" class="nav-link">📝 Blog</a></li>
+            <li><a href="about.html" class="nav-link">ℹ️ Giới Thiệu</a></li>
+            <li><a href="contact.html" class="nav-link">📞 Liên Hệ</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Cart Content -->
+    <main class="main">
+        <div class="container">
+            <div class="page-header">
+                <h1>🛒 Giỏ Hàng Của Bạn</h1>
+                <p>Kiểm tra và hoàn tất đơn hàng</p>
+            </div>
+
+            <div class="cart-content">
+                <div class="cart-items-section">
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=150&auto=format&fit=crop" alt="Cupcake Socola">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">Cupcake Socola</h3>
+                            <p class="item-desc">Bánh cupcake socola với topping kem</p>
+                            <div class="item-price">45.000đ</div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn">-</button>
+                            <span class="quantity">2</span>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <div class="item-total">90.000đ</div>
+                        <button class="item-remove">🗑️</button>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?q=80&w=150&auto=format&fit=crop" alt="Bánh Kem Vanilla">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">Bánh Kem Vanilla</h3>
+                            <p class="item-desc">Bánh kem vanilla lớp kem bơ thơm ngon</p>
+                            <div class="item-price">220.000đ</div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn">-</button>
+                            <span class="quantity">1</span>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <div class="item-total">220.000đ</div>
+                        <button class="item-remove">🗑️</button>
+                    </div>
+
+                    <div class="cart-empty" style="display: none;">
+                        <div class="empty-icon">🎂</div>
+                        <h3>Giỏ hàng trống</h3>
+                        <p>Hãy thêm các món bánh ngon vào giỏ hàng nhé!</p>
+                        <a href="products.html" class="btn btn-primary">Mua sắm ngay</a>
+                    </div>
+                </div>
+
+                <div class="cart-summary">
+                    <div class="summary-card">
+                        <h3>Tóm tắt đơn hàng</h3>
+                        
+                        <div class="summary-row">
+                            <span>Tạm tính:</span>
+                            <span>310.000đ</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Phí vận chuyển:</span>
+                            <span>0đ</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Giảm giá:</span>
+                            <span>-30.000đ</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Tổng cộng:</span>
+                            <span>280.000đ</span>
+                        </div>
+
+                        <div class="promo-code">
+                            <label for="promo">Mã giảm giá</label>
+                            <div class="promo-input">
+                                <input type="text" id="promo" placeholder="Nhập mã giảm giá">
+                                <button class="btn btn-outline">Áp dụng</button>
+                            </div>
+                        </div>
+
+                        <div class="shipping-info">
+                            <h4>🚚 Thông tin giao hàng</h4>
+                            <div class="shipping-options">
+                                <label class="shipping-option">
+                                    <input type="radio" name="shipping" checked>
+                                    <span>Giao hàng tiêu chuẩn (Miễn phí)</span>
+                                </label>
+                                <label class="shipping-option">
+                                    <input type="radio" name="shipping">
+                                    <span>Giao hàng nhanh 2h (+20.000đ)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="checkout-btn">Tiến hành thanh toán</button>
+                        
+                        <div class="continue-shopping">
+                            <a href="products.html">← Tiếp tục mua sắm</a>
+                        </div>
+                    </div>
+
+                    <div class="security-badges">
+                        <div class="badge">🔒 Thanh toán an toàn</div>
+                        <div class="badge">🚚 Giao hàng miễn phí</div>
+                        <div class="badge">↩️ Đổi trả trong 24h</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recently Viewed -->
+            <section class="recently-viewed">
+                <h2>Sản phẩm bạn có thể thích</h2>
+                <div class="products-grid">
+                    <!-- Recently viewed products -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=200&auto=format&fit=crop" alt="Croissant Bơ">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Croissant Bơ</h3>
+                            <div class="product-price">
+                                <span class="price-current">35.000đ</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Thêm sản phẩm khác -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+     <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🎂 Ruka Cake</h3>
+                <p>Thiên đường bánh ngọt - Nơi gửi trọn niềm tin và hương vị!</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">TikTok</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>🔗 Liên kết nhanh</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="products.html">Sản phẩm</a></li>
+                    <li><a href="birthday.html">Bánh sinh nhật</a></li>
+                    <li><a href="wedding-cakes.html">Bánh cưới</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="recipes.html">Công thức</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>📞 Liên hệ</h3>
+                <ul class="footer-links">
+                    <li>📍 123 Đường Bánh Ngọt, Q.1, TP.HCM</li>
+                    <li>📞 0123 456 789</li>
+                    <li>✉️ order@rukacake.com</li>
+                    <li>🕒 7:00 - 22:00 (T2 - CN)</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>📧 Đăng ký nhận tin</h3>
+                <p>Nhận công thức và ưu đãi đặc biệt</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email của bạn" required>
+                    <button type="submit" class="btn btn-primary">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">© 2024 Ruka Cake - Made with ❤️ | 
+                <a href="privacy.html" style="color: var(--text-light);">Chính sách bảo mật</a> | 
+                <a href="terms.html" style="color: var(--text-light);">Điều khoản sử dụng</a>
+            </p>
+        </div>
+    </div>
+</footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Same footer as index.html -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

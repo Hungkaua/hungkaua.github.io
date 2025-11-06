@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Thêm meta tags quan trọng -->
+<meta name="description" content="Ruka Cake - Thiên đường bánh ngọt với những chiếc bánh tươi ngon, chất lượng cao. Chuyên bánh sinh nhật, bánh cưới, cupcakes và các loại bánh ngọt.">
+<meta name="keywords" content="bánh ngọt, bánh sinh nhật, cupcakes, Ruka Cake, làm bánh, công thức bánh">
+<meta name="author" content="Ruka Cake">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Ruka Cake - Thiên đường bánh ngọt">
+<meta property="og:description" content="Khám phá thế giới bánh ngọt đầy màu sắc tại Ruka Cake">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Ruka Cake</title>
+    <link rel="stylesheet" href="Testcss.css">
+</head>
+<body>
+    <!-- Thêm ngay sau body -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<style>
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 10000;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+</style>
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <ul class="topbar-list">
+                <li>🚚 Miễn phí ship đơn từ 199k</li>
+                <li>🎁 Tặng kèm hộp quà xinh</li>
+                <li>⭐ Đảm bảo chất lượng</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-icon">🎂</span>
+                    <span>Ruka Cake</span>
+                </a>
+            </div>
+            
+            <div class="search">
+                <input type="text" placeholder="Tìm trong gallery...">
+                <button class="search-btn">🔍</button>
+            </div>
+            
+            <div class="actions">
+                <button class="btn">👤 Tài khoản</button>
+                <a href="cart.html" class="btn btn-primary">🛒 Giỏ hàng</a>
+            </div>
+        </div>
+    </header>
+
+<!-- Navigation -->
+<nav class="nav">
+    <div class="container">
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">🏠 Trang Chủ</a></li>
+            <li class="dropdown">
+                <a href="products.html" class="nav-link">🍰 Sản Phẩm ⌄</a>
+                <ul class="dropdown-menu">
+                    <li><a href="products.html">Tất cả sản phẩm</a></li>
+                    <li><a href="birthday.html">Bánh sinh nhật</a></li>
+                    <li><a href="wedding-cakes.html">Bánh cưới</a></li>
+                    <li><a href="cupcakes.html">Cupcakes</a></li>
+                    <li><a href="pastries.html">Bánh ngọt</a></li>
+                    <li><a href="cookies.html">Bánh quy</a></li>
+                </ul>
+            </li>
+            <li><a href="birthday.html" class="nav-link">🎂 Bánh Sinh Nhật</a></li>
+            <li><a href="gallery.html" class="nav-link">🖼️ Gallery</a></li>
+            <li class="dropdown">
+                <a href="recipes.html" class="nav-link">📖 Học Làm Bánh ⌄</a>
+                <ul class="dropdown-menu">
+                    <li><a href="recipes.html">Công thức</a></li>
+                    <li><a href="baking-tips.html">Mẹo làm bánh</a></li>
+                    <li><a href="video-recipes.html">Video hướng dẫn</a></li>
+                </ul>
+            </li>
+            <li><a href="blog.html" class="nav-link">📝 Blog</a></li>
+            <li><a href="about.html" class="nav-link">ℹ️ Giới Thiệu</a></li>
+            <li><a href="contact.html" class="nav-link">📞 Liên Hệ</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Gallery Content -->
+    <main class="main">
+        <div class="container">
+            <div class="page-header">
+                <h1>🖼️ Gallery Tác Phẩm</h1>
+                <p>Bộ sưu tập những chiếc bánh đẹp nhất của Ruka Cake</p>
+            </div>
+
+            <!-- Gallery Filter -->
+            <section class="gallery-filter">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tất cả</button>
+                    <button class="filter-btn" data-filter="birthday">🎂 Sinh nhật</button>
+                    <button class="filter-btn" data-filter="wedding">💒 Cưới</button>
+                    <button class="filter-btn" data-filter="custom">🎨 Custom</button>
+                    <button class="filter-btn" data-filter="mini">🧁 Mini cakes</button>
+                    <button class="filter-btn" data-filter="seasonal">🍂 Theo mùa</button>
+                </div>
+            </section>
+
+            <!-- Masonry Gallery -->
+            <section class="gallery-masonry">
+                <div class="masonry-grid">
+                    <!-- Image 1 -->
+                    <div class="masonry-item" data-category="birthday">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=400&auto=format&fit=crop" alt="Bánh sinh nhật">
+                        <div class="image-overlay">
+                            <h3>Bánh Sinh Nhật Hoa Hồng</h3>
+                            <p>Thiết kế tinh xảo với hoa hồng đường</p>
+                            <span class="image-category">🎂 Sinh nhật</span>
+                        </div>
+                    </div>
+
+                    <!-- Image 2 -->
+                    <div class="masonry-item" data-category="wedding">
+                        <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?q=80&w=400&auto=format&fit=crop" alt="Bánh cưới">
+                        <div class="image-overlay">
+                            <h3>Bánh Cưới Tầng Classic</h3>
+                            <p>Phong cách cổ điển sang trọng</p>
+                            <span class="image-category">💒 Cưới</span>
+                        </div>
+                    </div>
+
+                    <!-- Image 3 -->
+                    <div class="masonry-item" data-category="custom">
+                        <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?q=80&w=400&auto=format&fit=crop" alt="Bánh custom">
+                        <div class="image-overlay">
+                            <h3>Bánh Số 1 Cho Bé</h3>
+                            <p>Thiết kế ngộ nghĩnh cho bé trai</p>
+                            <span class="image-category">🎨 Custom</span>
+                        </div>
+                    </div>
+
+                    <!-- Image 4 -->
+                    <div class="masonry-item" data-category="mini">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=400&auto=format&fit=crop" alt="Cupcake">
+                        <div class="image-overlay">
+                            <h3>Set Cupcake Party</h3>
+                            <p>Bộ sưu tập cupcake nhiều màu sắc</p>
+                            <span class="image-category">🧁 Mini cakes</span>
+                        </div>
+                    </div>
+
+                    <!-- Image 5 -->
+                    <div class="masonry-item" data-category="seasonal">
+                        <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?q=80&w=400&auto=format&fit=crop" alt="Bánh mùa hè">
+                        <div class="image-overlay">
+                            <h3>Bánh Trái Cây Mùa Hè</h3>
+                            <p>Tươi mát với trái cây theo mùa</p>
+                            <span class="image-category">🍂 Theo mùa</span>
+                        </div>
+                    </div>
+
+                    <!-- Image 6 -->
+                    <div class="masonry-item" data-category="birthday">
+                        <img src="https://images.unsplash.com/photo-1574085733277-851d9d856a3a?q=80&w=400&auto=format&fit=crop" alt="Bánh hoa">
+                        <div class="image-overlay">
+                            <h3>Bánh Hoa Tỉ muội</h3>
+                            <p>Thiết kế lãng mạn với hoa tỉ muội</p>
+                            <span class="image-category">🎂 Sinh nhật</span>
+                        </div>
+                    </div>
+
+                    <!-- Image 7 -->
+                    <div class="masonry-item" data-category="custom">
+                        <img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?q=80&w=400&auto=format&fit=crop" alt="Bánh character">
+                        <div class="image-overlay">
+                            <h3>Bánh Nhân Vật Hoạt Hình</h3>
+                            <p>Theo yêu cầu của khách hàng</p>
+                            <span class="image-category">🎨 Custom</span>
+                        </div>
+                    </div>
+
+                    <!-- Image 8 -->
+                    <div class="masonry-item" data-category="wedding">
+                        <img src="https://images.unsplash.com/photo-1558301214-0c985f8b1e33?q=80&w=400&auto=format&fit=crop" alt="Bánh cưới modern">
+                        <div class="image-overlay">
+                            <h3>Bánh Cưới Modern</h3>
+                            <p>Phong cách hiện đại, tối giản</p>
+                            <span class="image-category">💒 Cưới</span>
+                        </div>
+                    </div>
+
+                    <!-- Image 9 -->
+                    <div class="masonry-item" data-category="mini">
+                        <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=400&auto=format&fit=crop" alt="Tiramisu cup">
+                        <div class="image-overlay">
+                            <h3>Tiramisu Cup</h3>
+                            <p>Tiramisu dạng cup tiện lợi</p>
+                            <span class="image-category">🧁 Mini cakes</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Customer Creations -->
+            <section class="customer-creations">
+                <h2>📸 Sáng Tạo Của Khách Hàng</h2>
+                <p>Những tác phẩm được tạo ra từ công thức của Ruka Cake</p>
+                
+                <div class="creations-grid">
+                    <!-- Creation 1 -->
+                    <div class="creation-card">
+                        <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?q=80&w=300&auto=format&fit=crop" alt="Customer creation">
+                        <div class="creation-info">
+                            <h3>Bánh Kem Vanilla</h3>
+                            <p class="creator">Bởi: Chị Hương</p>
+                            <div class="creation-meta">
+                                <span class="likes">❤️ 45</span>
+                                <span class="comments">💬 12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Creation 2 -->
+                    <div class="creation-card">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=300&auto=format&fit=crop" alt="Customer creation">
+                        <div class="creation-info">
+                            <h3>Croissant Tự Làm</h3>
+                            <p class="creator">Bởi: Anh Tuấn</p>
+                            <div class="creation-meta">
+                                <span class="likes">❤️ 67</span>
+                                <span class="comments">💬 23</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Creation 3 -->
+                    <div class="creation-card">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=300&auto=format&fit=crop" alt="Customer creation">
+                        <div class="creation-info">
+                            <h3>Bánh Mirror Glaze</h3>
+                            <p class="creator">Bởi: Chef Minh</p>
+                            <div class="creation-meta">
+                                <span class="likes">❤️ 89</span>
+                                <span class="comments">💬 34</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="share-your-creation">
+                    <h3>Chia sẻ tác phẩm của bạn</h3>
+                    <p>Tag @rukacake trên mạng xã hội để được feature</p>
+                    <div class="social-tags">
+                        <span class="social-tag">#RukaCake</span>
+                        <span class="social-tag">#HomemadeWithRuka</span>
+                        <span class="social-tag">#RukaRecipes</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+     <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🎂 Ruka Cake</h3>
+                <p>Thiên đường bánh ngọt - Nơi gửi trọn niềm tin và hương vị!</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">TikTok</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>🔗 Liên kết nhanh</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="products.html">Sản phẩm</a></li>
+                    <li><a href="birthday.html">Bánh sinh nhật</a></li>
+                    <li><a href="wedding-cakes.html">Bánh cưới</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="recipes.html">Công thức</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>📞 Liên hệ</h3>
+                <ul class="footer-links">
+                    <li>📍 123 Đường Bánh Ngọt, Q.1, TP.HCM</li>
+                    <li>📞 0123 456 789</li>
+                    <li>✉️ order@rukacake.com</li>
+                    <li>🕒 7:00 - 22:00 (T2 - CN)</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>📧 Đăng ký nhận tin</h3>
+                <p>Nhận công thức và ưu đãi đặc biệt</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email của bạn" required>
+                    <button type="submit" class="btn btn-primary">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">© 2024 Ruka Cake - Made with ❤️ | 
+                <a href="privacy.html" style="color: var(--text-light);">Chính sách bảo mật</a> | 
+                <a href="terms.html" style="color: var(--text-light);">Điều khoản sử dụng</a>
+            </p>
+        </div>
+    </div>
+</footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Same footer as index.html -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
